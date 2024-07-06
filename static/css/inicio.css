@@ -1,0 +1,63 @@
+/* Backgrounds */
+.dog-card-backcolor {
+    background-color: #ffe0c194;
+}
+
+.cat-card-backcolor {
+    background-color: #aad5ff96;
+}
+
+.card-backcolor {
+    background: linear-gradient(70deg, #ffe0c194, #aad5ff96);
+}
+
+
+/* Degradados */
+.deg-txt {
+    background: linear-gradient(to right, #af8bbfa4, #aad5ff9c);
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+
+/* Sombreados */
+.sombra-carrousel {
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 25px 20px -20px;
+}
+
+.sombra-cards {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+
+/* Margins */
+.mrg-sides-hr {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+}
+
+.mrg-sides {
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+}
+
+
+/* Estilo hr */
+.sty-hr {
+    border: 5px solid #323232;
+    border-radius: 300px/10px;
+    height: 0px;
+    text-align: center;
+}
+
+
+/* Estilo Formulario */
+.form-mx-width {
+    max-width: 80%;
+}
+
+.form-img {
+    height: 28rem;
+}

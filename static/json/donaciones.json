@@ -1,0 +1,46 @@
+{
+    "Fundaciones" : [   
+        { 
+            "FundId":1,
+            "Titulo":"Fundacion Esperanza Animal",
+            "Img":"../img/Donaciones/esperanza.png",
+            "Descripcion":"Forma con el objetivo de mejorar la calidad de vida de las mascotas abandonadas o nacidas en la calle.",
+            "Pagina":"https://www.esperanzaanimal.cl/"
+        },
+        { 
+            "FundId":2,
+            "Titulo":"Fundacion Julieta",
+            "Img":"../img/Donaciones/FundacionJulieta.png",
+            "Descripcion":"Somos una organización sin fines de lucro dedicada al rescate y adopción de perritos y gatitos en situación de calle o abandono. Nuestra misión es ayudar a mejorar la calidad de vida de estos animales y encontrarles hogares amorosos.",
+            "Pagina":"https://fundacionjulieta.cl/"
+        },
+        { 
+            "FundId":3,
+            "Titulo":"Patas Arriba",
+            "Img":"../img/Donaciones/PatasArriba.png",
+            "Descripcion":"Somos patas arriba un portal echo comunidad, que atesora cada momento que compartimos con nuestras maravillosas mascotas. Somos fieles a la idea de que la felicidad de tu peludo amigo depende de los momentos que vives con ellos. Nuestra misión es educar sobre los pilares fundamentales de tenencia responsable, empatía y respeto hacia los animales, así como el compromiso constante con el rescate y ayuda animal.",
+            "Pagina":"https://www.patasarriba.cl/"
+        },
+        { 
+            "FundId":4,
+            "Titulo":"Garras & Patas",
+            "Img":"../img/Donaciones/Garras&Patas.png",
+            "Descripcion":"Contribuir a la solución del problema de la sobre población de mascotas abandonadas que afecta a toda nuestra comunidad.",
+            "Pagina":"https://www.garrasypatas.cl/"
+        },
+        { 
+            "FundId":5,
+            "Titulo":"Fundacion Huella Animal",
+            "Img":"../img/Donaciones/huellas.png",
+            "Descripcion":"Fundación Huella Animal es una organización sin fines de lucro que nace el año 2015 con el propósito de dar solución a la problemática de Bienestar Animal.",
+            "Pagina":"https://fundacionhuellaanimal.cl/"
+        },
+        { 
+            "FundId":6,
+            "Titulo":"Fundacion Arca",
+            "Img":"../img/Donaciones/Arca.png",
+            "Descripcion":"Contribuir en la protección y el fomento del bienestar animal y la tenencia responsable, trabajando codo a codo con la ciudadanía, adultos mayores y niños, en distintas esferas de desarrollo, promoviendo la convivencia humana – animal, la empatía interespecie y el cuidado de todos los seres vivos.",
+            "Pagina":"https://fundacionarca.cl/"
+        }
+    ]
+}
