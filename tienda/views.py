@@ -14,3 +14,7 @@ def intex(request):
 def contacto(request):
     context = {}
     return render(request, 'contacto.html',context)
+
+def nosotros(request):
+    context = {}
+    return render(request, 'nosotros.html',context)
