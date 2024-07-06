@@ -1,0 +1,109 @@
+{
+    "Productos" :
+    [   
+        {"Id":1,
+        "Titulo":"Collar",
+        "Precio":2500,
+        "Descripcion":"En la fabricación del collarar utilizamos materiales de la más alta calidad para garantizar una mayor durabilidad para tu peludo.",
+        "Img":"{% static 'img/tienda/cperro_.png' %}"
+        },
+
+        {"Id":2,
+        "Titulo":"Correa",
+        "Precio":3000,
+        "Descripcion":"Correa de alta especificación con absorción de impacto. Diseñada meticulosamente con un sistema de bungee altamente elástico que absorbe efectivamente los choques repentinos que produce tu perro cuando jala.",
+        "Img":"../img/Tienda/coperro.png"
+        },
+
+        {"Id":3,
+        "Titulo":"Jugete",
+        "Precio":1500,
+        "Descripcion":"Jugete perfecto para los perros que aman los jugetes de forma de hueso, pero a la vez necesitan un jugete de goma seguro y resistente",
+        "Img":"../img/Tienda/hperro.png"
+        },
+
+        {"Id":4,
+        "Titulo":"Cama",
+        "Precio":10000,
+        "Descripcion":"Cama rectangular para perros está perfectamente fabricada con materiales de primera calidad, te aseguran muchas horas de sueño para tu peludo",
+        "Img":"../img/Tienda/cmperro.png"
+        },
+
+        {"Id":5,
+        "Titulo":"Plato",
+        "Precio":1500,
+        "Descripcion":"Hecho de polímero de melamina para mayor resistencia y fácil limpieza,  también presenta un agarre antideslizante en la parte inferior porque, después de todo, no es el cuenco el que necesita para caminar.",
+        "Img":"../img/Tienda/pperro.png"
+        },
+
+        {"Id":6,
+        "Titulo":"Transportador",
+        "Precio":8000,
+        "Descripcion":"Puerta cromada con cerradura y sistema de seguridad. Apertura clásica frontal.",
+        "Img":"../img/Tienda/tperro.png"
+        },
+        
+        {"Id":7,
+        "Titulo":"Collar",
+        "Precio":2000,
+        "Descripcion":"Fabricado con materiales suaves y duraderos, este collar es ajustable para garantizar un ajuste cómodo.",
+        "Img":"../img/Tienda/cgato.png"
+        },
+        
+        {"Id":8,
+        "Titulo":"Rascador",
+        "Precio":15000,
+        "Descripcion":"Fabricado con materiales resistentes y de alta calidad, este rascador es ideal para mantener a tu felino entretenido y alejado de tus muebles.",
+        "Img":"../img/Tienda/rgato.png"
+        },
+
+        {"Id":9,
+        "Titulo":"Juguete",
+        "Precio":2500,
+        "Descripcion":"Diseñado para estimular los instintos naturales de caza y juego, este juguete ofrece horas de diversión.",
+        "Img":"../img/Tienda/jgato.png"
+        },
+
+        {"Id":10,
+        "Titulo":"Cama",
+        "Precio":6000,
+        "Descripcion":"Fabricada con materiales suaves y de alta calidad, proporciona el máximo confort y calidez para tu felino.",
+        "Img":"../img/Tienda/cmgato.png"
+        },
+
+        {"Id":11,
+        "Titulo":"Bebedero",
+        "Precio":5000,
+        "Descripcion":"Diseñado para garantizar un flujo constante de agua fresca, este bebedero es fácil de usar y limpiar.",
+        "Img":"../img/Tienda/bgato.png"
+        },
+
+        {"Id":12,
+        "Titulo":"Transportador",
+        "Precio":10000,
+        "Descripcion":"Fabricado con materiales resistentes y ventilación adecuada, este transportador garantiza la máxima comodidad y seguridad durante los desplazamientos.",
+        "Img":"../img/Tienda/tgato.png"
+        },
+
+        {"Id":13,
+        "Titulo":"Corral Plegable",
+        "Precio":20000,
+        "Descripcion":"Fabricado con materiales duraderos y resistentes, asegura una larga vida útil y máxima seguridad para tus animales.",
+        "Img":"../img/Tienda/cotros.png"
+        },
+
+        {"Id":14,
+        "Titulo":"Bolsa para premios",
+        "Precio":4500,
+        "Descripcion":"Fabricada con materiales duraderos y fáciles de limpiar, esta bolsa es ideal para llevar durante paseos y entrenamientos.",
+        "Img":"../img/Tienda/botros.png"
+        },
+
+        {"Id":15,
+        "Titulo":"Placa de identificación",
+        "Precio":1000,
+        "Descripcion":"Fabricada con materiales de alta calidad, esta placa es resistente al desgaste y a la intemperie. ",
+        "Img":"../img/Tienda/pcotros.png"
+        }
+    ]
+}
