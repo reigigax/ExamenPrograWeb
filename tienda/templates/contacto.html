@@ -1,0 +1,265 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content%}
+
+<div class="container">
+    <form class="formulario mrg-form" id="formulario">
+        <h2>¡¡Contáctanos!!</h2>
+        <p>
+            ¡Hola! En nuestra tienda de mascotas,
+            nos comprometemos a brindarte la mejor experiencia
+            para ti y tu peludito.
+        </p>
+
+        <!--Nombre-->
+        <label for="name">Nombre <span>(Obligatorio, al menos 3 caracteres)</span></label>
+        <input id="name" name="nombre" minlength="3" type="text" required class="box form-control" placeholder="Tu nombre">
+        <div id="nameFeedback" class="invalid-feedback">
+            Por favor, introduce al menos 3 caracteres.
+        </div>
+        
+        <script>
+            const nameInput = document.getElementById('name');
+            const nameFeedback = document.getElementById('nameFeedback');
+        
+            nameInput.addEventListener('input', function(event) {
+                if (nameInput.validity.valid && nameInput.value.length >= 3) {
+                    nameFeedback.style.display = 'none';
+                    nameInput.classList.remove('is-invalid');
+                    nameInput.classList.add('is-valid');
+                } else {
+                    nameFeedback.style.display = 'block';
+                    nameInput.classList.remove('is-valid');
+                    nameInput.classList.add('is-invalid');
+                }
+            });
+        </script>
+        
+        <!--Apellido-->
+        <label for="apellido">Escribe tu apellido</label>
+        <input type="text" id="apellido" name="apellido" class="box form-control" placeholder="Tu apellido" required>
+        <div id="apellidoFeedback" class="invalid-feedback">
+            Por favor, completa este campo.
+        </div>
+        
+        <script>
+            const apellidoInput = document.getElementById('apellido');
+            const apellidoFeedback = document.getElementById('apellidoFeedback');
+        
+            apellidoInput.addEventListener('input', function(event) {
+                if (apellidoInput.validity.valid) {
+                    apellidoFeedback.style.display = 'none';
+                    apellidoInput.classList.remove('is-invalid');
+                    apellidoInput.classList.add('is-valid');
+                } else {
+                    apellidoFeedback.style.display = 'block';
+                    apellidoInput.classList.remove('is-valid');
+                    apellidoInput.classList.add('is-invalid');
+                }
+            });
+        </script>
+        
+        <!--Telefono-->
+        <label for="telefono">Escribe tu número de teléfono</label>
+        <input type="tel" id="telefono" name="telefono" class="box form-control" placeholder="Tu número de teléfono" required>
+        <div id="telefonoFeedback" class="invalid-feedback">
+            Por favor, introduce un número de teléfono válido.
+        </div>
+        
+        <script>
+            const telefonoInput = document.getElementById('telefono');
+            const telefonoFeedback = document.getElementById('telefonoFeedback');
+        
+            telefonoInput.addEventListener('keypress', function(event) {
+                const keyCode = event.keyCode;
+                if (!(keyCode >= 48 && keyCode <= 57) && keyCode !== 43) {
+                    event.preventDefault(); 
+                }
+            });
+        
+            telefonoInput.addEventListener('input', function(event) {
+                if (telefonoInput.validity.valid) {
+                    telefonoFeedback.style.display = 'none';
+                    telefonoInput.classList.remove('is-invalid');
+                    telefonoInput.classList.add('is-valid');
+                } else {
+                    telefonoFeedback.style.display = 'block';
+                    telefonoInput.classList.remove('is-valid');
+                    telefonoInput.classList.add('is-invalid');
+                }
+            });
+        </script>
+        
+        
+        <!--Correo-->
+        <label for="correo">Escribe tu correo</label>
+        <input type="email" id="correo" name="correo" class="box form-control" placeholder="Tu correo" required>
+        <div id="correoFeedback" class="invalid-feedback">
+            Por favor, introduce una dirección de correo electrónico válida.
+        </div>
+        
+        <script>
+            const correoInput = document.getElementById('correo');
+            const correoFeedback = document.getElementById('correoFeedback');
+        
+            correoInput.addEventListener('input', function(event) {
+                if (correoInput.validity.valid) {
+                    correoFeedback.style.display = 'none';
+                    correoInput.classList.remove('is-invalid');
+                    correoInput.classList.add('is-valid');
+                } else {
+                    correoFeedback.style.display = 'block';
+                    correoInput.classList.remove('is-valid');
+                    correoInput.classList.add('is-invalid');
+                }
+            });
+        </script>
+        
+
+        <!--Comuna-->
+        </script>
+        <div class="comuna">
+            <label for="comuna" class="form-label">Comuna</label>
+            <input type="text" class="form-control is-invalid" id="comuna" placeholder="Tu comuna" aria-describedby="comunaFeedback" required>
+            <div id="comunaFeedback" class="invalid-feedback">
+                Por favor, proporciona una ciudad válida.
+            </div>
+        </div>
+
+
+        <script>
+            const comunaInput = document.getElementById('comuna');
+            const comunaFeedback = document.getElementById('comunaFeedback');
+
+            comunaInput.addEventListener('input', function(event) {
+                if (comunaInput.value.trim() !== '') {
+                    comunaFeedback.style.display = 'none';
+                    comunaInput.classList.remove('is-invalid');
+                    comunaInput.classList.add('is-valid');
+                } else {
+                    comunaFeedback.style.display = 'block';
+                    comunaInput.classList.remove('is-valid');
+                    comunaInput.classList.add('is-invalid');
+                }
+            });
+        </script>
+
+
+        <div class="direccion">
+            <label for="direccion" class="form-label">Dirección</label>
+            <input type="text" class="form-control" id="direccion" aria-describedby="direccionFeedback" placeholder="Tu direccion" required>
+            <div id="direccionFeedback" class="invalid-feedback">
+                Por favor, proporciona una dirección válida.
+            </div>
+        </div>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const direccionInput = document.getElementById('direccion');
+                const direccionFeedback = document.getElementById('direccionFeedback');
+
+                direccionInput.addEventListener('input', function(event) {
+                    if (direccionInput.value.trim() !== '') {
+                        direccionFeedback.style.display = 'none';
+                        direccionInput.classList.remove('is-invalid');
+                        direccionInput.classList.add('is-valid');
+                    } else {
+                        direccionFeedback.style.display = 'block';
+                        direccionInput.classList.remove('is-valid');
+                        direccionInput.classList.add('is-invalid');
+                    }
+                });
+            });
+        </script>
+
+
+
+            <!--Region-->
+            <div class="Region">
+                <label for="region" class="form-label">Región</label>
+                <select class="form-select" id="region" aria-describedby="regionFeedback" required>
+                    <option selected disabled value="">Seleccionar</option>
+                    <option>Aisén del G. Carlos Ibáñez del Campo</option>
+                    <option>Antofagasta</option>
+                    <option>Arica y Parinacota</option>
+                    <option>Atacama</option>
+                    <option>Biobío</option>
+                    <option>Coquimbo</option>
+                    <option>La Araucanía</option>
+                    <option>Libertador General Bernardo O'Higgins</option>
+                    <option>Los Lagos</option>
+                    <option>Los Ríos</option>
+                    <option>Magallanes y de la Antártica Chilena</option>
+                    <option>Maule</option>
+                    <option>Metropolitana de Santiago</option>
+                    <option>Ñuble</option>
+                    <option>Tarapacá</option>
+                    <option>Valparaíso</option>
+                </select>
+                <div id="regionFeedback" class="invalid-feedback">
+                    Por favor, selecciona una región.
+                </div>
+            </div>
+
+            <script>
+                const regionInput = document.getElementById('region');
+                const regionFeedback = document.getElementById('regionFeedback');
+
+                regionInput.addEventListener('change', function(event) {
+                    if (regionInput.value !== '') {
+                        regionFeedback.style.display = 'none';
+                        regionInput.classList.remove('is-invalid');
+                        regionInput.classList.add('is-valid');
+                    } else {
+                        regionFeedback.style.display = 'block';
+                        regionInput.classList.remove('is-valid');
+                        regionInput.classList.add('is-invalid');
+                    }
+                });
+            </script>
+            
+  <!-- Contenedor del modal -->
+  <div class="modal" id="exampleModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Gracias</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Se ha sido enviado exitosamente sus datos!!.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+               
+            </div>
+        </div>
+    </div>
+</div>
+<button type="submit" class="btn btn-soft">
+    Enviar
+</button>
+
+
+    </div>
+
+    
+    </div>
+
+    <script>
+        document.getElementById("formulario").addEventListener("submit", function(event) {
+            // Prevenir el envío del formulario
+            event.preventDefault();
+            
+            // Restablecer los valores del formulario
+            document.getElementById("formulario").reset();
+            
+            // Mostrar el modal de confirmación
+            var myModal = new bootstrap.Modal(document.getElementById('exampleModal'));
+            myModal.show();
+        });
+    </script>
+
+        
+    
+{% endblock %}
