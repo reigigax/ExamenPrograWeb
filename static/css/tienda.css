@@ -1,0 +1,481 @@
+body{
+
+    background-image: url();
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+/* TIENDA */
+*::after,
+*::before,
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0 auto;
+    max-width: 1200px;
+    font-family: 'Lato';
+    color: #333;
+    font-family: 'More Sugar', sans-serif;
+}
+
+/*NAVBAR*/
+/* Conexion a Flaticon - Iconos */
+@import url('https://cdn-uicons.flaticon.com/2.3.0/uicons-thin-straight/css/uicons-thin-straight.css');
+@import url('https://cdn-uicons.flaticon.com/2.3.0/uicons-thin-rounded/css/uicons-thin-rounded.css');
+@import url('https://cdn-uicons.flaticon.com/2.3.0/uicons-regular-straight/css/uicons-regular-straight.css');
+@import url('https://cdn-uicons.flaticon.com/2.3.0/uicons-solid-straight/css/uicons-solid-straight.css');
+@import url('https://cdn-uicons.flaticon.com/2.3.0/uicons-solid-rounded/css/uicons-solid-rounded.css');
+@import url('https://fonts.cdnfonts.com/css/more-sugar');
+                
+.cart-empty {
+    font-family: 'More Sugar', sans-serif;
+}
+/*Estilo para todos los elementos de la página*/
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Estilo para la pagina entera */
+body {
+    background-image: url('../img/Tienda/Fondo.png'); 
+    background-size: cover; 
+    background-position: center;
+}
+
+
+/* Estilo de texto*/
+.text-18 {
+    font-size: 18px;
+    font-family: 'More Sugar', sans-serif;
+}
+
+.text-grey {
+    color: rgb(50, 50, 50);
+    font-family: 'More Sugar', sans-serif;
+}
+
+.text-grey-home {
+    color: rgb(50, 50, 50);
+    font-weight: 650;
+    font-family: 'More Sugar', sans-serif;
+}
+
+.mrg-nav-side {
+    margin-left: 17.5%;
+    margin-right: 17.5%;
+}
+
+.mrg-sides {
+    margin-left: 10%;
+}
+
+.mrg-top {
+    margin-top: 6.3%;
+}
+
+/* Estilos de Imagenes */
+.degradado-circulo {
+    background: radial-gradient(rgba(0, 0, 0) 58%, #ffffff00, #ffffff00 50%);
+    width: 40px;
+    height: 40px;
+
+}
+
+
+/* Estilos de Nav Bar */
+.nav-col {
+    background-color: #a4b3d4;
+}
+
+.degradado-nav {
+    background: #F8C592;
+}
+
+
+/* Estilo para las etiquetas "<ul>" */
+.ul-style {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+
+
+/* Estilo para las etiquetas "<li>" dentro de las etiquetas "<ul>" */
+ul li {
+    list-style: none;
+}
+
+
+/* Estilo para las etiquetas "<a>" que se encuentran dentro de etiquetas "<li>" y "<ul>" */
+ul li a {
+    position: relative;
+    display: block;
+    text-transform: uppercase;
+    margin: 20px 0;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #c0e3f7;
+    font-size: 18px;
+    font-weight: 600;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+
+/* Estilo para ANTES de realizar una accion en las etiquetas "<a>" que se encuentran dentro de etiquetas "<li>" y "<ul>" */
+ul li a:before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    border-top: 2px solid #ffe0c1;
+    border-bottom: 2px solid #ffe0c1;
+    transform: scaleY(2);
+    opacity: 0; transition: 0.3s;
+}
+
+
+/* Estilo para DESPUES de realizar una accion en las etiquetas "<a>" que se encuentran dentro de etiquetas "<li>" y "<ul>" */
+ul li a:after {
+    content: "";
+    position: absolute;
+    top: 1px; left: 0;
+    width: 100%; height: 100%;
+    background-color: #ffe0c1;
+    transform:  scale(0);
+    opacity: 0;
+    transition: 0.3s;
+    z-index: -1;
+}
+
+
+/* Estilo para cuando el Cusror se encuentre en las etiquetas "<a>" que se encuentran dentro de etiquetas "<li>" y "<ul>" */
+ul li a:hover {
+    color: #012822;
+}
+
+
+/* Estilo para ANTES cuando el Cusror se encuentre en las etiquetas "<a>" que se encuentran dentro de etiquetas "<li>" y "<ul>" */
+ul li a:hover:before {
+    transform: scaleY(1);
+    opacity: 1;
+}
+
+
+/* Estilo para DESPUES cuando el Cusror se encuentre en las etiquetas "<a>" que se encuentran dentro de etiquetas "<li>" y "<ul>" */
+ul li a:hover:after {
+    transform: scaleY(1);
+    opacity: 1;
+}
+
+/*ICON CARRITO*/
+
+.icon-cart{
+    width: 40px;
+    height: 40px;
+    stroke: #000;
+}
+
+.icon-cart:hover{
+    cursor: pointer;
+}
+
+img{
+    max-width: 100%;
+}
+
+
+/* HEADER CARRITO DE COMPRAS */
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0 40px 0;
+}
+
+.container-icon{
+    position: relative;
+}
+
+.count-products{
+    position: absolute;
+    top: 55%;
+    right: 0;
+
+    background-color: #000;
+    color: #fff;
+    width: 25px;
+    height: 25px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+#contador-productos{
+    font-size: 12px;
+    font-family: 'More Sugar', sans-serif;
+}
+
+.container-cart-products{
+    position: absolute;
+    top: 50px;
+    right: 0;
+
+    background-color: #fff;
+    width: 400px;
+    z-index: 1;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+    border-radius: 10px;
+    
+}
+
+.cart-product{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    font-family: 'More Sugar', sans-serif;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.20);
+
+}
+
+.info-cart-product{
+    display: flex;
+    justify-content: space-between;
+    flex: 0.8;
+    
+}
+
+.titulo-producto-carrito{
+    font-size: 20px;
+}
+
+.precio-producto-carrito{
+    font-weight: 700;
+    font-size: 20px;
+    margin-left: 10px;
+    
+}
+
+.cantidad-producto-carrito{
+    font-weight: 400;
+    font-size: 20px;
+    
+}
+
+.icon-close{
+    width: 50px;
+    height: 50px;
+}
+
+.icon-close:hover{
+    stroke: rgb(255, 0, 0);
+    cursor: pointer;
+    
+}
+
+.cart-total{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    gap: 20px;
+    
+}
+
+.cart-total h3{
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'More Sugar', sans-serif;
+}
+
+.total-pagar{
+    font-size: 20px;
+    font-weight: 900;
+    font-family: 'More Sugar', sans-serif;
+}
+
+.hidden-cart{
+    display: none;
+
+}
+
+
+/* PAG INDEX TIENDA */
+
+.container-items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    font-family: 'More Sugar', sans-serif;
+}
+
+.contenedor{
+    grid-template-columns:none; 
+    display:block;
+    flex-wrap:wrap;
+    position:unset; 
+   
+}
+.contenedor1{
+    grid-template-columns:none; 
+    display:block;
+    flex-wrap:wrap;
+    position:unset; 
+   
+}
+.item{
+    border-radius: 10px;
+}
+
+.item:hover{
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+}
+
+.item img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    transition: all .5s;
+    
+}
+
+.item figure{
+    overflow: hidden;
+}
+
+.item:hover img{
+    transform: scale(1.2);
+}
+
+.info-product{
+    padding: 15px 30px;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.price{
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.info-product button{
+    border: none;
+    background: none;
+    background-color: #3b393c;
+    color: #fff;
+    padding: 15px 10px;
+    cursor: pointer;
+}
+
+.cart-empty{
+    padding: 20px;
+    text-align: center;
+}
+
+
+.hidden{
+    display: none;
+}
+/*CLASE CONTENIDO PAG NOSOTROS*/
+.contenido{
+    font-family: 'More Sugar', sans-serif;
+    align-items:center;
+    display:contents;
+    font-size: 20px;
+}
+
+/*CAJAS DE TEXTO PAG NOSOTROS*/
+.caja{
+   display: flex; 
+   background: #d4b5f158;
+   font-family: 'More Sugar', sans-serif;
+   text-align:justify; 
+}
+.caja2{
+    font-family: 'More Sugar', sans-serif; 
+    text-align:justify; 
+}
+.caja3{
+        display: block; 
+        background: #d4b5f158;
+        font-family: 'More Sugar', sans-serif;
+        text-align:justify; 
+}
+.caja >div{
+    width: 60%;
+    padding: 10%;
+    font-family: 'More Sugar', sans-serif;
+}
+@media (max-width: 700px){
+    .contenido > div{
+        flex: 1 1 100%;
+    } 
+    .caja{
+        display: block; 
+     }
+     .caja >div{
+         width: 90%;
+         padding: 10%;
+
+     }
+     .contenedor>div{
+        grid-template-columns:none;
+     }
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.55);
+  }
+  
+  /* Modal Contenido */
+  .modal-content {
+    background-color: #F8C592;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+  }
+  
+  /* Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
