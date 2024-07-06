@@ -1,0 +1,60 @@
+@import url('https://cdn-uicons.flaticon.com/2.3.0/uicons-thin-straight/css/uicons-thin-straight.css');
+@import url('https://cdn-uicons.flaticon.com/2.3.0/uicons-thin-rounded/css/uicons-thin-rounded.css');
+@import url('https://cdn-uicons.flaticon.com/2.3.0/uicons-regular-straight/css/uicons-regular-straight.css');
+@import url('https://cdn-uicons.flaticon.com/2.3.0/uicons-solid-straight/css/uicons-solid-straight.css');
+@import url('https://cdn-uicons.flaticon.com/2.3.0/uicons-solid-rounded/css/uicons-solid-rounded.css');
+@import url('https://fonts.cdnfonts.com/css/more-sugar');
+@import url('https://cdn-uicons.flaticon.com/2.3.0/uicons-brands/css/uicons-brands.css');
+
+body {
+    background-image: url('../img/utilidades/BackGround.webp'); 
+    background-size: cover; 
+    background-position: center;
+    font-family: 'More Sugar', sans-serif;
+}
+/*CLASE CONTENIDO PAG NOSOTROS*/
+.contenido{
+    font-family: 'More Sugar', sans-serif;
+    align-items:center;
+    display:contents;
+    font-size: 20px;
+}
+
+/*CAJAS DE TEXTO PAG NOSOTROS*/
+.caja{
+   display: flex; 
+   background: #d4b5f158;
+   font-family: 'More Sugar', sans-serif;
+   text-align:justify; 
+}
+.caja2{
+    font-family: 'More Sugar', sans-serif; 
+    text-align:justify; 
+}
+.caja3{
+        display: block; 
+        background: #d4b5f158;
+        font-family: 'More Sugar', sans-serif;
+        text-align:justify; 
+}
+.caja >div{
+    width: 60%;
+    padding: 10%;
+    font-family: 'More Sugar', sans-serif;
+}
+@media (max-width: 700px){
+    .contenido > div{
+        flex: 1 1 100%;
+    } 
+    .caja{
+        display: block; 
+     }
+     .caja >div{
+         width: 90%;
+         padding: 10%;
+
+     }
+     .contenedor>div{
+        grid-template-columns:none;
+     }
+}
