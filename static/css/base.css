@@ -1,0 +1,9 @@
+body {
+    background-image: url('../img/utilidades/BackGround.webp'); 
+    background-size: cover; 
+    background-position: center;
+}
+
+.nav-background {
+    background: #F8C592;
+}
