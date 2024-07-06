@@ -1,0 +1,66 @@
+{% load static %}
+<nav class="navbar fixed-top navbar-expand-lg nav-background">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="">
+            <span class="text-grey">
+                <img src="{% static 'img/utilidades/PatIconNav.webp' %}" alt="TP-Icon" class="degradado-circulo mrg-l-sides" type="image/webp">
+                TIENDA PELUDITA
+            </span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <!-- NavBar - Inicio -->
+                <li class="nav-item">
+                    <a class="nav-link active nav-inicio" href="">
+                        <span class="text-grey"> 
+                            <i class="fi fi-sr-home"></i>
+                            Inicio
+                        </span>
+                    </a>
+                </li>
+                <!-- NavBar - Tienda -->
+                <li class="nav-item">
+                    <a class="nav-link active nav-tienda" href="#">
+                        <span class="text-grey">
+                            <i class="fi fi-sr-shopping-cart"></i>
+                            Tienda
+                        </span>
+                    </a>
+                </li>
+                <!-- NavBar - Donaciones -->
+                <li class="nav-item">
+                    <a class="nav-link active nav-donaciones" href="#">
+                        <span class="text-grey">
+                            <i class="fi fi-sr-piggy-bank"></i>
+                            Donaciones
+                        </span>
+                    </a>
+                </li>
+                <!-- NavBar - Nosotros -->
+                <li class="nav-item">
+                    <a class="nav-link active nav-nosotros" href="#">
+                        <span class="text-grey">
+                            <i class="fi fi-sr-users-alt"></i>
+                            Nosotros
+                        </span>
+                    </a>
+                </li>
+                <!-- NavBar - Contacto -->
+                <li class="nav-item">
+                    <a class="nav-link active nav-contacto" href="#">
+                        <span class="text-grey">
+                            <i class="fi fi-sr-comments"></i>
+                            Contacto
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <button class="btn nav-button-login" type="submit">Cerrar Sesion</button>
+        </div>
+    </div>
+</nav>
